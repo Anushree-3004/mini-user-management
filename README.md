@@ -54,8 +54,7 @@ This project was developed as part of a **48-hour Backend Developer Intern asses
 - Axios
 
 ### Deployment
-- Backend: Render / Railway
-- Frontend: Vercel / Netlify
+- Backend: https://mini-user-management-g39f.onrender.com
+- Frontend: https://mini-user-management-frontend.onrender.com
 - Database: MongoDB Atlas
 
----
