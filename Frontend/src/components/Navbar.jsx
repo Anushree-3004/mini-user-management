@@ -13,30 +13,32 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <Link to="/" className="brand">
-        User Management
-      </Link>
+      <div className="nav-left">
+        <span className="nav-brand">User Management</span>
 
-      {!isAuthenticated && (
-        <div className="nav-links">
-          <Link to="/login" btn btn-secondary>
-            Login
+        {role === "admin" && (
+          <Link className="nav-link" to="/admin">
+            Admin
           </Link>
-          <Link to="/register">Register</Link>
-        </div>
-      )}
+        )}
 
-      {isAuthenticated && (
-        <div className="nav-links">
-          <Link to="/profile">My Profile</Link>
+        {isAuthenticated && (
+          <Link className="nav-link" to="/profile">
+            Profile
+          </Link>
+        )}
+      </div>
 
-          {role === "admin" && <Link to="/admin">Admin Dashboard</Link>}
-
-          <button className="btn btn-secondary" onClick={handleLogout}>
-            Logout
-          </button>
-        </div>
-      )}
+      <div className="nav-right">
+        {isAuthenticated && (
+          <>
+            <span className="nav-role">{role}</span>
+            <button className="logout-btn" onClick={logout}>
+              Logout
+            </button>
+          </>
+        )}
+      </div>
     </nav>
   );
 };

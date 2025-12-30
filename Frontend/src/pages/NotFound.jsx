@@ -8,7 +8,7 @@ const NotFound = () => {
         <p className="muted">This route doesn’t exist in the frontend app.</p>
         <div className="actions">
           <Link className="btn" to="/">
-            Go to Dashboard
+            Login
           </Link>
         </div>
       </div>
