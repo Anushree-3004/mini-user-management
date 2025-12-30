@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "sweet-shop-backend": "file:.."},
+  
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "jest --runInBand"
+  }
+
+}
