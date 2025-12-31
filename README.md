@@ -52,8 +52,27 @@ This project was developed as part of a **48-hour Backend Developer Intern asses
 - React (Hooks)
 - React Router v6
 - Axios
+- ## 📘 API Documentation
 
-### Deployment
+
+
+### 🔗 Postman Collection:  
+## Authentication
+- POST `/api/auth/register`
+- POST `/api/auth/login`
+
+## User
+- GET `/api/users/me`
+- PUT `/api/users/me`
+- PUT `/api/users/me/password`
+
+## Admin
+- GET `/api/admin/users`
+- PATCH `/api/admin/users/:id/activate`
+- PATCH `/api/admin/users/:id/deactivate`
+
+
+## Deployment
 - Backend: https://mini-user-management-g39f.onrender.com
 - Frontend: https://mini-user-management-frontend.onrender.com
 - Database: MongoDB Atlas
